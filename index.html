@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hệ Thống Quản Lý Đơn Vị</title>
+    <title>Hệ Thống Quản Lý - Truyền Thông</title>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- Gọi trực tiếp CSS dùng chung từ Web mẹ -->
+    <!-- CSS dùng chung từ web mẹ -->
     <link rel="stylesheet" href="https://khcbvadl-ai.github.io/web/khcb-app.css">
 </head>
 <body>
     <div class="container" id="app-root"></div>
 
-    <!-- Gọi trực tiếp JS dùng chung từ Web mẹ -->
+    <!-- JS dùng chung từ web mẹ -->
     <script src="https://khcbvadl-ai.github.io/web/khcb-app.js"></script>
     <script>
-        // Chỉ khai báo đúng mã Sheet của đơn vị này
-        KHCB.start({
-            hubSheetId: "1HmNk4ZxhsJG4t3J4d2Wm9wRG9tDy_gAk0yAmmDLCUZY"
+        KHCB.init({
+            type: "home",
+            sheetId: "1HmNk4ZxhsJG4t3J4d2Wm9wRG9tDy_gAk0yAmmDLCUZY" // Thay ID Google Sheet tài liệu/môn học của đơn vị này
         });
     </script>
 </body>
